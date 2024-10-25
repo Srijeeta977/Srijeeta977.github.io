@@ -1,105 +1,125 @@
-/* Universal Styles */
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #e0f7fa, #b3e5fc); /* Grazing blue background */
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(145deg, #e0c3fc, #8ec5fc);
-    color: #333;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Header */
 header {
-    background-color: #e3e1ff;
-    padding: 10px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-header nav ul {
+nav ul {
     list-style-type: none;
+    padding: 0;
 }
 
-header nav ul li {
-    display: inline-block;
+nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
-header nav ul li a {
+nav a {
     text-decoration: none;
-    font-size: 1.2em;
-    color: #6f42c1;
-    padding: 5px 10px;
-    transition: all 0.3s ease;
+    color: #00796b;
+    font-weight: bold;
 }
 
-header nav ul li a:hover {
-    color: #fff;
-    background-color: #6f42c1;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+nav a:hover {
+    color: #004d40;
 }
 
-/* Heading Styles */
-h1 {
-    text-align: center;
-    color: #6f42c1;
-    font-size: 3em;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
-}
-
-/* Section Styles */
 section {
-    background: rgba(255, 255, 255, 0.7);
+    margin: 20px;
     padding: 20px;
-    margin: 20px auto;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    width: 80%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-section h2 {
-    font-size: 2.2em;
-    color: #6f42c1;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
+/* Individual section colors */
+#about-me {
+    background: linear-gradient(135deg, #ffccbc, #ffab91); /* About Me */
 }
 
-section p, section ul {
-    font-size: 1.1em;
-    color: #444;
-    line-height: 1.6;
+#educational-background {
+    background: linear-gradient(135deg, #c5e1a5, #aed581); /* Educational Background */
 }
 
-section ul li {
-    padding: 5px 0;
+#experience {
+    background: linear-gradient(135deg, #90caf9, #64b5f6); /* Experience */
 }
 
-/* Image Styling */
-img {
-    display: block;
-    margin: 20px auto;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+#publications {
+    background: linear-gradient(135deg, #ffe082, #ffca28); /* Publications */
 }
 
-/* Footer */
+#awards {
+    background: linear-gradient(135deg, #ffab40, #ff9800); /* Awards and Achievements */
+}
+
+#projects {
+    background: linear-gradient(135deg, #b39ddb, #9575cd); /* Projects */
+}
+
+#membership {
+    background: linear-gradient(135deg, #80deea, #4dd0e1); /* Membership */
+}
+
+#research {
+    background: linear-gradient(135deg, #f8bbd0, #f48fb1); /* Research Thrust Area */
+}
+
+#events {
+    background: linear-gradient(135deg, #d7ccc8, #bcaaa4); /* List of Events */
+}
+
+#presentation {
+    background: linear-gradient(135deg, #d1c4e9, #b39ddb); /* Poster/Paper Presentation */
+}
+
+#courses {
+    background: linear-gradient(135deg, #ffccbc, #ffab91); /* Courses Completed */
+}
+
+#contact {
+    background: linear-gradient(135deg, #cfd8dc, #b0bec5); /* Contact Address */
+}
+
+h1, h2 {
+    color: #00796b;
+}
+
+h1 {
+    margin-top: 0;
+}
+
 footer {
     text-align: center;
-    padding: 10px 0;
-    background-color: #6f42c1;
+    padding: 10px;
+    background-color: #00796b;
     color: white;
-    border-radius: 15px 15px 0 0;
 }
 
-  
+.profile-image {
+    max-width: 150px; /* Smaller size */
+    height: auto;
+    border-radius: 50%; /* Makes the image round */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+.profile-image:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+#image {
+    text-align: center;
+    margin-bottom: 20px; /* Space below the image */
+}
