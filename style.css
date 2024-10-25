@@ -90,5 +90,16 @@ img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    box-shadow: 0 10px 20px rgba
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
 
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #6f42c1;
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+  
